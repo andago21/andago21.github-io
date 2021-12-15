@@ -1,0 +1,56 @@
+body{
+	background-image: linear-gradient(to right, red , yellow);
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+	margin: 10px 420px;
+	margin-bottom: 30px;
+}
+
+.first{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+#hobb{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 80px;
+}
+
+.fol{
+	text-align: center;
+	font-size: 24px;
+	list-style: none;
+}
+
+#links{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 80px;
+}
+
+.fol1{
+	text-align: center;
+	font-size: 24px;
+	list-style: none;
+}
+
+#img1{
+	width: 1000px;
+	height: 800px;
+}
+
+div{
+	justify-content: center;
+	display: flex;
+	margin-top: 70px;
+}
