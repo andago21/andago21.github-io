@@ -1,0 +1,220 @@
+*{
+	font-family: 'Inconsolata', monospace;
+}
+
+body{
+	background-image: linear-gradient(to right, red , yellow);
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.a1{
+	font-size: 24px;
+	list-style: none;
+	color: black;
+	background-color: white;
+	margin: 20px;
+	padding: 5px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+	margin: 10px 420px;
+	margin-bottom: 30px;
+}
+
+.title1{
+	font-size: 70px;
+	text-align: center;
+}
+
+.first{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.second{
+	margin-top: 150px;
+	font-size: 30px;
+}
+
+.third{
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+.four{
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.loc{
+	font-size: 24px;
+	background-color: lightgreen;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+
+#hobb{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 80px;
+}
+
+.fol{
+	text-align: center;
+	font-size: 24px;
+	list-style: none;
+}
+
+.fol2{
+	text-align: center;
+	font-size: 24px;
+	list-style: none;
+	color: black;
+	background-color: lightblue;
+}
+
+.fol3{
+	text-align: center;
+	font-size: 24px;
+	list-style: none;
+	color: black;
+	background-color: lightblue;
+	margin: 10px;
+}
+
+.special{
+	font-size: 28px;
+	margin: 50px 0;
+}
+
+#links{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 80px;
+}
+
+#food1{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 40px;
+	background-color: lightblue;
+	padding: 20px;
+}
+
+#food2{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 40px;
+	background-color: lightblue;
+	padding: 20px;
+}
+
+.fol1{
+	text-align: center;
+	font-size: 24px;
+	list-style: none;
+}
+
+#img1{
+	width: 1200px;
+	height: 800px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 30px;
+	border-width: 5px;
+}
+
+.img1{
+	justify-content: center;
+	display: flex;
+	margin-top: 70px;
+}
+
+#img2{
+	margin-top: 40px;
+	width: 1000px;
+	height: 600px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 30px;
+	border-width: 5px;
+}
+
+.img2{
+	float: left;
+	display: flex;
+	margin-top: 70px;
+}
+
+#img3{
+	width: 1000px;
+	height: 600px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 30px;
+	border-width: 5px;
+}
+
+.img3{
+	float: right;
+	display: flex;
+	margin-top: 70px;
+}
+
+#img4{
+	width: 1000px;
+	height: 600px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 30px;
+	border-width: 5px;
+}
+
+.img4{
+	float: left;
+	display: flex;
+	margin-top: 70px;
+}
+
+.p4{
+	font-size: 24px;
+}
+
+#df1{
+	background-color: lightgreen;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#df2{
+	background-color: lightblue;
+	padding-bottom: 20px;
+}
+
+#df3{
+	background-color: lightpink;
+	margin-top: 40px;
+	padding-bottom: 10px;
+	padding-top: 2px;
+	padding-left: 20px;
+}
+
+#df4{
+	background-color: lightblue;
+	padding-bottom: 20px;
+}
+
+#li1{
+	margin-bottom: 20px;
+}
+

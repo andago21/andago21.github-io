@@ -1,0 +1,48 @@
+body{
+	background-color: lightgreen;
+}
+
+h1{
+	text-align: center;
+	color: red;
+	background-color: white;
+	padding: 20px;
+}
+
+div{
+	height: 50px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+.red{
+	background: red;
+}
+
+.white{
+	background: white;
+}
+
+.green{
+	background: green;
+}
+
+img{
+	height: 300px;
+	width: 400px;
+	margin: auto;
+	justify-content: center;
+	display: block;
+}
+
+a{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: darkgreen;
+}
+
+a:hover{
+	color: red;
+}
