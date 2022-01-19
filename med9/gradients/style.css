@@ -1,0 +1,41 @@
+body{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+p{
+    padding: 70px;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.p1{
+    background: linear-gradient(90deg, rgba(152,0,254,1) 9%, rgba(254,148,0,1) 95%);
+    border-radius: 30px;
+}
+
+.p2{
+    background: radial-gradient(circle, rgba(255,0,112,1) 12%, rgba(0,236,255,1) 19%, rgba(3,0,244,1) 50%);
+    border-radius: 30px;
+}
+
+.p3{
+    background: linear-gradient(0deg, rgba(153,2,0,1) 0%, rgba(254,174,0,1) 35%, rgba(254,238,0,1) 56%, rgba(172,255,0,1) 68%, rgba(0,254,183,1) 92%);
+    border-radius: 30px;
+}
+
+.p4{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 5%, rgba(0,142,255,1) 100%);
+    border-radius: 30px;
+}
