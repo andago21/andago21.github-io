@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&family=Oswald:wght@200&display=swap');
+
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(17,17,201,1) 33%, rgba(65,193,255,1) 84%);
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    background-color: rgb(59, 153, 230);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2{
+    font-size: 40px;
+    text-align: right;
+    margin: 30px;
+    background-color: rgb(216, 130, 0);
+    font-family: 'Libre Baskerville', serif;
+}
+
+p{
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 30px;
+    column-count: 3;
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Oswald', sans-serif;
+}
+
+.signature{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
