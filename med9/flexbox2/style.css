@@ -76,7 +76,7 @@ body{
 
 .section{
     height: 200px;
-    background-color: rgb(129, 191, 219);
+    background: linear-gradient(90deg, rgba(7,194,0,1) 0%, rgba(160,223,46,1) 35%, rgba(99,228,162,1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
