@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("bild1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header h1{
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    letter-spacing: 0.1rem;
+    padding-bottom: 30px;
+    font-family: 'Cormorant SC', serif;
+    transition: 0.5s ease;
+}
+
+.header h1:hover{
+    transform: translateY(-5px);
+}
+
+.main{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(194,166,0,1) 0%, rgba(223,109,46,1) 35%, rgba(228,99,99,1) 100%);
+    padding: 80px;
+}
+
+.main p{
+    color: white;   
+    margin: 20px;
+    font-weight: bold;
+    column-count: 3;
+}
+
+.footer{
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(142, 202, 23);
+    padding: 30px;
+    background-image: url("bild2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.footer p:hover{
+    transform: translateY(-10px);
+}
+
+.section{
+    height: 200px;
+    background-color: rgb(129, 191, 219);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    font-size: 25px;
+}
+
+.section h2{
+    transition: 0.5s ease;
+    font-family: 'Cormorant SC', serif;
+}
+
+.section h2:hover{
+    transform: translateY(-10px);
+}
+
+.section ul{
+    transition: 0.5s ease;
+}
+
+.section li{
+    font-family: 'Cormorant SC', serif;
+}
+
+.section ul:hover{
+    transform: translateY(-10px);
+}
