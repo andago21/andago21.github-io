@@ -1,0 +1,248 @@
+/* 
+*
+*   Title: Basic structure of a page.
+*   Author: Andis Ago
+*   Date: 16.03.2022
+*
+/* 
+
+/******General Styling******/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(12,3,162,1) 0%, rgba(63,63,223,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+hr{
+    border: 2px solid black;
+    background: black;
+}
+
+/******Navigation******/ 
+
+.navbar{
+    background-color: dodgerblue;
+    padding: 20px;
+    display: flex; /*This is used to place items n a row*/ 
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none; /*Removes bullet points*/ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar li{
+    transition: 0.3s ease-in-out;
+}
+
+.navbar li:hover{
+    transform: translateY(-10px);
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(46, 86, 131);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.navbar img{
+    height: 70px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar img:hover{
+    transform: scale(1.1);
+}
+
+/******Header******/ 
+
+header{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+
+
+/******Main******/ 
+
+#home main{
+    padding: 20px 0;
+    border: 2px solid black;
+}
+
+#home main p{
+    column-count: 3;
+    margin: 20px 10px;
+}
+
+main h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/******Footer******/ 
+
+footer{
+    height: 80px;
+    background: rgb(5, 41, 109);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+}
+
+/******Section 1******/ 
+
+section .right{
+    width: 50%;
+    padding: 30px;
+    border: 3px solid white;
+}
+
+section .left{
+    width: 50%;
+    padding: 30px;
+    border: 3px solid white;
+}
+
+section .left h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+section .right h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background: rgb(37, 87, 226);
+}
+
+
+.helps img{
+    width: 500px;
+    border: 5px solid white;
+}
+
+.helps{
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(34,170,230,1) 0%, rgba(5,147,180,1) 35%, rgba(11,128,156,1) 99%);
+}
+
+/**************** Home Page Styling ****************/
+
+#home header{
+    background-image: url("images/img2.jpg");
+}
+
+#home #pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+#home #pictures img{
+    width: 200px;
+    margin: 5px;
+}
+
+/**************** Contact Page Styling ****************/
+
+#contact header{
+    background-image: url("images/img3.jpg");
+}
+
+#contact header h1{
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+
+#contact main{
+    background: rgb(37, 87, 195);
+    margin: 0;
+    border: 5px solid white;
+}
+
+#contact main h2{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+#contact main ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#contact main ul li{
+    background: rgb(18, 66, 93);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/**************** Help Page Styling ****************/
+
+#help header{
+    background-image: url("images/help.jpg");
+}
+
+#help #helpm{
+    background: rgb(11, 69, 144);
+    border: 2px solid white;
+}
+
+#help #helpm p{
+    margin: 20px 10px;
+    column-count: 2;
+    font-size: 20px;
+}
+
+
+
+
