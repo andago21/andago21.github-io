@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: lightblue;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 47);
+}
+
+a:hover{
+    color: red;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li{
+    margin-left: 50px;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover{
+    transform: translateY(-10px);
+    color: red;
+}
+
+nav img{
+    width: 120px;
+    margin-left: 20px;
+    border-radius: 60%;
+    transition: 0.3s ease-in-out;
+}
+
+nav img:hover{
+    transform: scale(1.3);
+}
+
+header{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("b3.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 3px solid white;
+}
+
+header h1{
+    color: white;
+    margin-top: 70px;
+    font-size: 60px;
+}
+
+section{
+    padding: 200px;
+}
+
+#link1{
+    background-color: rgb(35, 112, 255);
+    background-image: url("b2.jpg");
+    background-position: top;
+    background-size: cover;
+    border: 3px solid white;
+}
+
+#link2{
+    background-color: rgb(255, 39, 39);
+    background-image: url("b4.jpg");
+    background-position: top;
+    background-size: cover;
+    border: 3px solid white;
+}
+
+#link3{
+    background-color: rgb(248, 248, 93);
+    background-image: url("b5.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 3px solid white;
+}
