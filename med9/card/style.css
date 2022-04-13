@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+    background: #e6802e; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #e6802e; /* Gecko Browsers */
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+article{
+    position: relative;
+}
+
+article .d1{
+    height: 180px;
+    width: 300px;
+    background-image: url("b1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+article .d2{
+    height: 180px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+article .d2 .header{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+article .d2 h1{
+    font-size: 23px;
+}
+
+article .d2 .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 13px;
+    color: rgb(160, 160, 160);
+}
+
+article .box{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 6px;
+    font-size: 12px;
+    position: absolute;
+    left: 0px;
+    top: 191.5px;
+}
