@@ -1,0 +1,50 @@
+*{
+	scroll-behavior: smooth;
+	font-family: calibri, sans-serif;
+	margin:  0;
+}
+
+body{
+	background-color: darkgray;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightgray;
+}
+
+nav img{
+	height: 160px;
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li{
+	list-style: none;
+	margin-right: 50px;
+	transition: 0.3s ease-in-out;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+	background-color: lightcoral;
+	padding: 30px;
+	border-radius: 50px;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover{
+	background-color: darkgray;
+}
+
+nav ul li:hover{
+	transform: translateY(-10px);
+}
