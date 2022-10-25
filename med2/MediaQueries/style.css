@@ -30,8 +30,31 @@ article{
 aside{
 	background-color: lightskyblue;
 	padding: 25px;
+}
+
+li{
+	display: inline;
+	word-spacing: 4.5px;
+}
+
+
+/*Design Tablet*/
+@media(min-width: 600px){
+
+	li{
+		display: inline;
 	}
 
+	article{
+		width: 60%;
+		float: left;
+	}
+
+	aside{
+		width: 40%;
+		float: left;
+	}
+}
 
 /*Design fur den Desktop*/
 @media(min-width: 768px){
@@ -50,6 +73,10 @@ aside{
 	article{
 		width: 50%;
 		float: left;
+	}
+
+	li{
+		display: block;
 	}
 }
 
