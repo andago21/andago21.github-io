@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+}
+
+footer {
+	background-color: darkblue;
+	padding: 20px;
+}
+
+footer div{
+	padding: 20px;
+	margin-top: 30px;
+}
+
+footer .d1, .d2, .d3 h2{
+	color: white;
+	text-align: center;
+}
+
+footer .d1, .d2,.d3 p{
+	color: white;
+	text-align: center;
+}
+
+footer .d1, .d2, p a{
+	color: white;
+	text-align: center;
+}
+
+@media (min-width:768px){
+
+	footer{
+		display: flex;
+		padding: 0 40px;
+		height: 200px;
+	}
+
+	footer .d1{
+		width: 25%;
+		float: left;
+	}
+
+	footer .d2{
+		width: 25%;
+		float: left;
+	}
+
+	footer .d3{
+		width: 50%;
+		float: left;
+	}
+
+	footer .d1, .d2, .d3 h2{
+		text-align: left;
+		margin-bottom: 10px;
+	} 
+
+	footer div{
+		padding: 0;
+	}
+
+	footer .d1, .d2, .d3 p{
+		color: white;
+		text-align: left;
+	}
+}
