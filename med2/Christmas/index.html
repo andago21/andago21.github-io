@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Christmas</title>
+
+	<style type="text/css">
+
+		*{
+			margin: 0;
+		}
+
+		body{
+			height: 100vh;
+			background-image: url("win.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		h1{
+			text-align: center;
+			font-size: 70px;
+			font-weight: bolder;
+			color: white;
+			margin-top: 80px;
+		}
+
+		.maincon{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 80px;
+		}
+
+		.container{
+			width: 300px;
+			height: 300px;
+			margin: 120px;
+			position: relative;
+			perspective: 800px;
+			border: 2px solid black;
+		}
+
+		.container .win1{
+			background-image: url("bg.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 300px;
+			height: 300px;
+		}
+
+		.container .bg1{
+			background-image: url("gift.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			transform-origin: left;
+			animation: rotation 3s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		.container .win2{
+			background-image: url("bg.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 300px;
+			height: 300px;
+		}
+
+		.container .bg2{
+			background-image: url("gift.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			transform-origin: left;
+			animation: rotation 3s;
+			animation-delay: 1s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		.container .win3{
+			background-image: url("bg.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 300px;
+			height: 300px;
+		}
+
+		.container .bg3{
+			background-image: url("gift.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			transform-origin: left;
+		}
+
+		.container .bg3:hover{
+			animation: rotation 3s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes rotation{
+			100%{transform: rotatey(-100deg);}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<h1>Marry Christmas!</h1>
+
+	<div class="maincon">
+		<div class="container">
+			<div class="bg1"></div>
+			<div class="win1"></div>
+		</div>
+
+		<div class="container">
+			<div class="bg2"></div>
+			<div class="win2"></div>
+		</div>
+
+		<div class="container">
+			<div class="bg3"></div>
+			<div class="win3"></div>
+		</div>
+	</div>
+
+</body>
+</html>
