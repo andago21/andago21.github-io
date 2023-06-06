@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt</title>
+
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap');
+
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 4fr 3fr;
+        height: 100vh;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3 {
+        padding: 20px;
+    }
+
+    .grid-item1 {
+            background-color: rgb(0, 0, 0, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .grid-item1 img {
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 10px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 ul {
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .grid-item1 ul li {
+            margin-right: 10px;
+        }
+
+        .grid-item1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 a:hover {
+            color: red;
+            transform: translateY(-3px);
+        }
+
+    .grid-item3 {
+        background: rgb(0, 230, 108);
+        background: linear-gradient(90deg, rgba(0, 230, 108, 1) 0%, rgba(6, 175, 0, 1) 48%, rgba(0, 156, 91, 1) 100%);
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .grid-item3 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .grid-item3 p {
+        width: 100%;
+        margin: 10px 0;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .grid-item3 .a2 img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+        border: 4px solid black;
+        animation-name: rotation;
+        animation-duration: 12s;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        transition: 0.15s ease-in-out;
+    }
+
+    @keyframes rotation {
+        0% { transform: translateY(0px); }
+        33% { transform: translateY(-10px); }
+        66% { transform: translateY(10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .grid-item3 .a1 {
+        margin: 10px;
+    }
+
+    .grid-item3 .a2 {
+        margin: 10px;
+    }
+
+    .grid-item4 {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .grid-item4 p {
+        font-size: 14px;
+        color: white;
+        margin: 0;
+    }
+
+    @media(min-width: 768px){
+        *{
+            margin: 0;
+            scroll-behavior: smooth;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+		.grid-container {
+            display: grid;
+            grid-template-rows: 1fr 4fr 3fr;
+            height: 100vh;
+        }
+
+        .grid-item1, .grid-item2, .grid-item3{
+            height: 100%;
+            padding: 20px;
+        }
+
+        .grid-item1{
+            background-color: rgb(0,0,0, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            height: 130px;
+        }
+
+        .grid-item1 img{
+            width: 150px;
+            border-radius: 40%;
+            margin-left: 20px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 ul{
+            margin: 0 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .grid-item1 ul li{
+            margin-right: 40px;
+        }
+
+        .grid-item1 a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 a:hover{
+            color: red;
+            transform: translateY(-3px);
+        }
+
+        .grid-item3{
+            background: rgb(0,230,108);
+			background: linear-gradient(90deg, rgba(0,230,108,1) 0%, rgba(6,175,0,1) 48%, rgba(0,156,91,1) 100%);
+            height: 850px;
+            display: flex;
+            align-items: center;
+        }
+
+        .grid-item3 .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 50px;
+            flex-direction:row;
+        }
+
+        .grid-item3 p{
+            width: 700px;
+            padding: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+
+        .grid-item3 .a2 img{
+            height: 350px;
+            margin: 0 100px;
+            border: 4px solid black;
+            animation-name: rotation;
+            animation-duration: 12s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            transition: 0.15s ease-in-out;
+        }
+
+        @keyframes rotation {
+            0% {transform: translateY(0px);}
+            33%{transform: translateY(-30px);}
+            66%{transform: translateY(30px);}
+            100%{transform: translateY(0px);}
+        }
+
+        .grid-item3 .a1{
+            margin-right: 50px;
+        }
+
+        .grid-item3 .a2{
+            margin-right: 100px;
+        }
+
+        .grid-item4{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            width: auto;
+        }
+
+        .grid-item4 p{
+            font-size: 20px;
+            color: white;
+            margin: 0 50px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <img src="images/icon_improved.jpg" alt="">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="deutsch.html"><li>Deutsch</li></a>
+                <a href="math.html"><li>Mathe</li></a>
+            </ul>
+        </div>
+        <div class="grid-item3">
+            <section id="gi3">
+            <div class="container">
+                <div class="a2">
+                    <img src="images/5_neu.jpg" alt="">
+                </div>
+                <div class="a1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lorem at nisl commodo, nec vestibulum leo pharetra. Pellentesque nec lacus sed orci semper pharetra. Nulla sit amet placerat nulla. Ut porta velit ac quam porttitor laoreet. Etiam molestie turpis quis nibh pretium eleifend. Cras luctus est a velit congue, in maximus sem tempus. In molestie tortor sed lacus tempor, et viverra odio lacinia. Donec ut egestas arcu, condimentum iaculis metus. Donec pellentesque felis sed maximus sagittis. Aliquam lacinia aliquet ullamcorper. Nulla sagittis diam at aliquet rutrum. Quisque sagittis ante eget nibh cursus, quis cursus justo condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lorem at nisl commodo, nec vestibulum leo pharetra. Pellentesque nec lacus sed orci semper pharetra. Nulla sit amet placerat nulla. Ut porta velit ac quam porttitor laoreet. Etiam molestie turpis quis nibh pretium eleifend. Cras luctus est a velit congue, in maximus sem tempus. In molestie tortor sed lacus tempor, et viverra odio lacinia. Donec ut egestas arcu, condimentum iaculis metus. Donec pellentesque felis sed maximus sagittis. Aliquam lacinia aliquet ullamcorper. Nulla sagittis diam at aliquet rutrum. Quisque sagittis ante eget nibh cursus, quis cursus justo condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lorem at nisl commodo, nec vestibulum leo pharetra. Pellentesque nec lacus sed orci semper pharetra. Nulla sit amet placerat nulla. Ut porta velit ac quam porttitor laoreet. Etiam molestie turpis quis nibh pretium eleifend. Cras luctus est a velit congue, in maximus sem tempus. In molestie tortor sed lacus tempor, et viverra odio lacinia. Donec ut egestas arcu, condimentum iaculis metus. Donec pellentesque felis sed maximus sagittis. Aliquam lacinia aliquet ullamcorper. Nulla sagittis diam at aliquet rutrum. Quisque sagittis ante eget nibh cursus, quis cursus justo condimentum.</p>
+                </div>
+            </div>
+            </section>    
+        </div>
+        <div class="grid-item4">
+            <p>© Österreichische Schule "Peter Mahringer" all rights reserved</p>
+            <p>Andis Ago</p>
+        </div>
+
+    </div>
+</body>
+</html>

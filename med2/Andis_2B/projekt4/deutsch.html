@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap');
+
+    *{
+	margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.grid-item1 {
+            background-color: rgb(0, 0, 0, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+        }
+
+        .grid-item1 img {
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 10px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 ul {
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .grid-item1 ul li {
+            margin-right: 10px;
+        }
+
+        .grid-item1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 a:hover {
+            color: red;
+            transform: translateY(-3px);
+        }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, auto);
+}
+
+.one,
+.nine {
+  background-color: red;
+  border: 1px solid white;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,69,69);
+  background: linear-gradient(90deg, rgba(255,69,69,1) 0%, rgba(224,0,0,1) 48%, rgba(203,0,0,1) 100%);
+}
+
+.one p, 
+.nine p{
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight{
+  background-color: red;
+  border: 1px solid white;
+}
+
+.five{
+  height: 350px;
+  width: 100%;
+  background-image: url("images/7_neu.jpg");
+  background-size: cover;
+}
+
+.grid-item2{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 10px;
+}
+
+.grid-item2 p{
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+@media(min-width: 768px){
+
+  .grid-item1{
+      background-color: rgb(0,0,0, 1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      height: 130px;
+      padding: 20px;
+  }
+
+  .grid-item1 img{
+      width: 150px;
+      border-radius: 40%;
+      margin-left: 20px;
+      transition: 0.25s ease-in-out;
+  }
+
+  .grid-item1 ul{
+      margin: 0 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+  }
+
+  .grid-item1 ul li{
+      margin-right: 40px;
+  }
+
+  .grid-item1 a{
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      transition: 0.25s ease-in-out;
+  }
+
+  .grid-item1 a:hover{
+      color: red;
+      transform: translateY(-3px);
+  }
+
+  .wrapper {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+  }
+  .one {
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+    background-color: red;
+    border: 1px solid white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background: rgb(255,69,69);
+  background: linear-gradient(90deg, rgba(255,69,69,1) 0%, rgba(224,0,0,1) 48%, rgba(203,0,0,1) 100%);
+  }
+
+  .one p{
+      font-size: 20px;
+      color: white;
+      padding: 20px;
+  }
+
+  .two {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-color: red;
+    border: 1px solid white;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 3/ 4;
+    background-color: red;
+    border: 1px solid white;
+  }
+  .four {
+    grid-column: 2;
+    grid-row: 3/4;
+    background-color: red;
+    border: 1px solid white;
+  }
+  .five {
+    grid-column: 3;
+    grid-row: 3/4;
+    background-color: red;
+    border: 1px solid white;
+    background-image: url("images/7_neu.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .six {
+    grid-column: 1;
+    grid-row: 4/6;
+    background-color: red;
+    border: 1px solid white;
+  }
+  .seven {
+    grid-column: 2;
+    grid-row: 4/5;
+    background-color: red;
+    border: 1px solid white;
+  }
+  .eight {
+    grid-column: 3;
+    grid-row: 4/5;
+    background-color: red;
+    border: 1px solid white;
+  }
+  .nine {
+    grid-column: 2/4;
+    grid-row: 5/6;
+    background-color: red;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background: rgb(255,69,69);
+  background: linear-gradient(90deg, rgba(255,69,69,1) 0%, rgba(224,0,0,1) 48%, rgba(203,0,0,1) 100%);
+  }
+
+  .nine p{
+      font-size: 20px;
+      color: white;
+      padding: 20px;
+  }
+
+  .grid-item2{
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+  }
+
+  .grid-item2 p{
+      font-size: 20px;
+      color: white;
+      margin: 0 50px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-item1">
+    <img src="images/icon_improved.jpg" alt="">
+    <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="deutsch.html"><li>Deutsch</li></a>
+        <a href="math.html"><li>Mathe</li></a>
+    </ul>
+</div>
+
+<div class="wrapper">
+  <div class="one">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida, libero ac faucibus ultricies, est quam tincidunt magna, vel mattis magna ipsum nec sapien. Cras ac ligula ac lacus bibendum malesuada. Curabitur tincidunt porta nisl et lobortis. Curabitur mattis molestie sem, vel dignissim orci finibus a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean condimentum placerat purus, ut condimentum neque. Praesent efficitur leo mauris, vel mattis nunc viverra at. Aliquam erat volutpat. Etiam interdum sed felis a lacinia. Nulla sed erat vitae nibh sagittis elementum. Nulla tristique id quam quis consequat. Vestibulum ipsum quam, luctus non rhoncus interdum, tincidunt a augue. Curabitur accumsan eros turpis, eu vehicula velit ultricies pulvinar. Maecenas id laoreet massa, eget aliquam massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida, libero ac faucibus ultricies, est quam tincidunt magna, vel mattis magna ipsum nec sapien. Duis in viverra ex. Vestibulum ut metus a nibh tincidunt imperdiet non quis erat. Maecenas ipsum turpis, efficitur eu leo at, luctus tempor felis. Aliquam mattis tortor vitae dui commodo, id pharetra ante convallis. Aliquam posuere nibh purus, quis euismod nibh vulputate sit amet. Nam posuere risus sapien, at ornare libero mattis eget. Quisque consequat fringilla quam eu aliquet. Cras ac auctor urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida, libero ac faucibus ultricies, est quam tincidunt magna, vel mattis magna ipsum nec sapien. Pellentesque congue consectetur molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida, libero ac faucibus ultricies, est quam tincidunt magna, vel mattis magna ipsum nec sapien.
+    </p>
+  </div>
+  <img src="images/1.png" height=100% width=100% class="two">
+  <img src="images/2.png" alt="" height=100% width=100% class="three">
+  <img src="images/4.png" alt="" height=100% width=100% class="four">
+  <div class="five">
+  </div>
+  <img src="images/6.png" alt="" height=100% width=100% class="six">
+  <img src="images/2.png" alt="" height=100% width=100% class="seven">
+  <img src="images/main_bg_1.jpg" alt="" height=100% width=100% class="eight">
+  <div class="nine"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida, libero ac faucibus ultricies, est quam tincidunt magna, vel mattis magna ipsum nec sapien. Cras ac ligula ac lacus bibendum malesuada. Curabitur tincidunt porta nisl et lobortis. Curabitur mattis molestie sem, vel dignissim orci finibus a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean condimentum placerat purus, ut condimentum neque. Praesent efficitur leo mauris, vel mattis nunc viverra at. Aliquam erat volutpat. Etiam interdum sed felis a lacinia. Nulla sed erat vitae nibh sagittis elementum. Nulla tristique id quam quis consequat.
+
+Vestibulum ipsum quam, luctus non rhoncus interdum, tincidunt a augue. Curabitur accumsan eros turpis, eu vehicula velit ultricies pulvinar. Maecenas id laoreet massa, eget aliquam massa. Duis in viverra ex. Vestibulum ut metus a nibh tincidunt imperdiet non quis erat. Maecenas ipsum turpis, efficitur eu leo at, luctus tempor felis. Aliquam mattis tortor vitae dui commodo, id pharetra ante convallis. Aliquam posuere nibh purus, quis euismod nibh vulputate sit amet. Nam posuere risus sapien, at ornare libero mattis eget. Quisque consequat fringilla quam eu aliquet. Cras ac auctor urna. Pellentesque congue consectetur molestie.</p></div>
+</div>
+<div class="grid-item2">
+    <p>© Österreichische Schule "Peter Mahringer" all rights reserved</p>
+    <p>Andis Ago</p>
+</div>
+
+</body>
+</html>

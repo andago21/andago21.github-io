@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt</title>
+
+    <style>	
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap');
+
+        * {
+            margin: 0;
+            scroll-behavior: smooth;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        .grid-container {
+            height: 100vh;
+        }
+
+        .grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+            padding: 20px;
+        }
+
+        .grid-item1 {
+            background-color: rgb(0, 0, 0, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .grid-item1 img {
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 10px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 ul {
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .grid-item1 ul li {
+            margin-right: 10px;
+        }
+
+        .grid-item1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 a:hover {
+            color: red;
+            transform: translateY(-3px);
+        }
+
+        .grid-item2 {
+            background-image: url("images/main_bg_1.jpg");
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-item2 h1 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin: 0 20px;
+            background-color: rgba(140, 140, 140, 0.7);
+            border-radius: 20px;
+        }
+
+        .grid-item2 p {
+            color: white;
+            font-size: 14px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .grid-item2 .container {
+            padding: 30px;
+        }
+
+        .grid-item2 .container .link1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-item2 .container .link1 a {
+            text-decoration: none;
+            font-size: 14px;
+            background-color: red;
+            padding: 3px 8px;
+            border-radius: 10px;
+            transition: 0.25s ease-in-out;
+            color: white;
+        }
+
+        .grid-item2 .container .link1 a:hover {
+            transform: translateY(-3px);
+            color: black;
+        }
+
+        .grid-item3 {
+            background: rgb(255, 49, 49);
+            background: linear-gradient(90deg, rgba(255, 49, 49, 1) 7%, rgba(208, 255, 185, 1) 84%);
+        }
+
+        .grid-item3 .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .grid-item3 h1 {
+            margin: 10px;
+            color: white;
+            background-color: rgba(141, 208, 255, 0.7);
+            border-radius: 30px;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .grid-item3 p {
+            width: 100%;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .grid-item3 .a2 img {
+            height: 350px;
+            margin: 10px;
+            border: 4px solid black;
+            animation-name: rotation;
+            animation-duration: 12s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            transition: 0.15s ease-in-out;
+        }
+
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(15deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-15deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .grid-item3 .a1 {
+            margin: 10px;
+        }
+
+        .grid-item3 .a2 {
+            margin: 10px;
+        }
+
+        .grid-item3 .link2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .grid-item3 .link2 a {
+            text-decoration: none;
+            font-size: 14px;
+            background-color: red;
+            padding: 3px 8px;
+            border-radius: 10px;
+            transition: 0.25s ease-in-out;
+            color: white;
+        }
+
+        .grid-item3 .link2 a:hover {
+            transform: translateY(-3px);
+            color: black;
+        }
+
+        .grid-item4 {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+        }
+
+        .grid-item4 p {
+            font-size: 12px;
+            color: white;
+            margin: 0 10px;
+        }
+
+    @media(min-width: 768px){
+        *{
+            margin: 0;
+            scroll-behavior: smooth;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+		.grid-container {
+            display: grid;
+            grid-template-rows: 1fr 4fr 3fr;
+            height: 100vh;
+        }
+
+        .grid-item1, .grid-item2, .grid-item3{
+            height: 100%;
+            padding: 20px;
+        }
+
+        .grid-item1{
+            background-color: rgb(0,0,0, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            height: 130px;
+        }
+
+        .grid-item1 img{
+            width: 150px;
+            border-radius: 40%;
+            margin-left: 20px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 ul{
+            margin: 0 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .grid-item1 ul li{
+            margin-right: 40px;
+        }
+
+        .grid-item1 a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item1 a:hover{
+            color: red;
+            transform: translateY(-3px);
+        }
+
+        .grid-item2{
+            background-image: url("images/main_bg_1.jpg");
+            background-size: cover;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 130px;
+        }
+
+        .grid-item2 h1{
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            margin: 0 60px;
+            background-color: rgba(140, 140, 140, 0.7);
+            border-radius: 20px;
+        }
+
+        .grid-item2 p{
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        .grid-item2 a{
+            color: white;
+        }
+
+        .grid-item2 .container{
+            padding: 60px;
+        }
+
+        .grid-item2 .container .link1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .grid-item2 .container .link1 a{
+            text-decoration: none;
+            font-size: 20px;
+            background-color: red;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 0.25s ease-in-out;
+        }
+
+        .grid-item2 .container .link1 a:hover{
+            transform: translateY(-3px);
+            color: black;
+        }
+
+        .grid-item3{
+            background: rgb(255,49,49);
+            background: linear-gradient(90deg, rgba(255,49,49,1) 7%, rgba(208,255,185,1) 84%);
+        }
+
+        .grid-item3 .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 50px;
+            flex-direction:row;
+        }
+
+        .grid-item3 h1{
+            margin: 20px;
+            color: white;
+            background-color: rgba(141, 208, 255, 0.7);
+            border-radius: 30px;
+            padding: 10px;
+            width: 350px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .grid-item3 p{
+            width: 700px;
+            margin-left: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+
+        .grid-item3 .a2 img{
+            height: 450px;
+            margin: 20px;
+            border: 4px solid black;
+            animation-name: rotation;
+            animation-duration: 12s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            transition: 0.15s ease-in-out;
+        }
+
+        @keyframes rotation {
+            0% {transform: rotate(0deg);}
+            25%{transform: rotate(15deg);}
+            50%{transform: rotate(0deg);}
+            75%{transform: rotate(-15deg);}
+            100%{transform: rotate(0deg);}
+        }
+
+        .grid-item3 .a1{
+            margin-left: 100px;
+            margin-right: 50px;
+        }
+
+        .grid-item3 .a2{
+            margin-right: 100px;
+        }
+
+        .grid-item3 .link2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .grid-item3 .link2 a{
+            text-decoration: none;
+            font-size: 20px;
+            background-color: red;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 0.25s ease-in-out;
+            color: white;
+        }
+
+        .grid-item3 .link2 a:hover{
+            transform: translateY(-3px);
+            color: black;
+        }
+
+        .grid-item4{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .grid-item4 p{
+            font-size: 20px;
+            color: white;
+            margin: 0 50px;
+        }
+        
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <img src="images/icon_improved.jpg" alt="">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="deutsch.html"><li>Deutsch</li></a>
+                <a href="math.html"><li>Mathe</li></a>
+            </ul>
+        </div>
+        <div class="grid-item2">
+            <div class="container">
+                <h1>Collecting Garbage</h1>   
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lorem at nisl commodo, nec vestibulum leo pharetra.</p>
+                <div class="link1">
+                    <a href="#gi3">Explore!</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item3">
+            <section id="gi3">
+            <div class="container">
+                <div class="a1">
+                    <h1>Don't hesitate to help!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur lorem at nisl commodo, nec vestibulum leo pharetra. Pellentesque nec lacus sed orci semper pharetra. Nulla sit amet placerat nulla. Ut porta velit ac quam porttitor laoreet. Etiam molestie turpis quis nibh pretium eleifend. Cras luctus est a velit congue, in maximus sem tempus. In molestie tortor sed lacus tempor, et viverra odio lacinia. Donec ut egestas arcu, condimentum iaculis metus. Donec pellentesque felis sed maximus sagittis. Aliquam lacinia aliquet ullamcorper. Nulla sagittis diam at aliquet rutrum. Quisque sagittis ante eget nibh cursus, quis cursus justo condimentum.</p>
+                </div>
+                <div class="a2">
+                    <img src="images/1.png" alt="">
+                </div>
+            </div>
+            <div class="link2">
+                <a href="math.html">Find out more!</a>
+            </div>
+            </section>    
+        </div>
+        <div class="grid-item4">
+            <p>© Österreichische Schule "Peter Mahringer" all rights reserved</p>
+            <p>Andis Ago</p>
+        </div>
+
+    </div>
+</body>
+</html>
